@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Hang Man</title>
+		<link rel="stylesheet" href="assets/css/styles1.css">
+		<link href="https://fonts.googleapis.com/css?family=Butcherman|Finger+Paint" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Julius+Sans+One|Permanent+Marker|Rock+Salt" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Jolly+Lodger" rel="stylesheet">
+	</head>
+	<body >
+		<!-- onclick="NewGame()" -->
+		<!-- <h1 class="h2">The Hang Man</h1> -->
+		<!-- <button id="gameStart" onclick="NewGame()" >Start the game</button> -->
+		<!-- <p> Computer think of this word <span id="pcWord"></span> </p> -->
+		<div>
+			<p  class="error">H<span>a</span>ng</p>
+			
+		</div>
+		<div id="second">
+			<p  class="code">M<span>A</span><span>N</span></p>
+		</div>
+		<div id="thisWord" ><p> <!-- Guessed Word --> <span class="code" id="wordUp"> </span> </p></div>
+		<section>
+			<p class="thisRest"> Your guesses are :  <span class="error" id="userGuess"></span> </p>
+			<p class="thisRest"> You have <span class="error"  id="lives"></span>  lives left </p>
+			<p class="thisRest"> Looses : <span class="error" id="looser"> </span> </p>
+			<p class="thisRest"> Wins : <span class="error" id="wins"> </span> </p>
+		</section>
+		<canvas id="hangman" width="400" height="500">
+		</canvas>Your browser does not support the HTML5 canvas tag.
+	<audio id="audio1" src="assets/sounds/sock.mp3" preload="auto"></audio>
+<audio id="audio2" src="assets/sounds/welldone.mp3" preload="auto"></audio>
+<audio id="audio3" src="assets/sounds/excellent.mp3"></audio>
+<audio id="audio4" src="assets/sounds/hah.mp3"></audio>
+<audio id="audio5" src="assets/sounds/dontmakeme.mp3"></audio>
+<audio id="audio6" src="assets/sounds/badLetter2.mp3" preload="auto"></audio>
+<audio id="audio7" src="assets/sounds/badLetter.mp3" preload="auto"></audio>
+<audio id="audio8" src="assets/sounds/youwillneverwin.mp3"></audio>
+<audio id="audio9" src="assets/sounds/tryingtowin.mp3"></audio>
+<section id="myName">
+<p  class="error">D<span>Z</span><span>M</span>I<span>T</span>R<span>Y</span></p>
+<p  class="error">D<span>U</span><span>B</span>A<span>R</span><span>A</span><span>U</span></p>
+</section>
+
+<script src='assets/scripts/jquery-3.1.1.js'></script>
+<script src='assets/scripts/HM.js'></script>
+
+
+</body>
+</html>
